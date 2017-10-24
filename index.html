@@ -24,15 +24,22 @@
         </div>
 
     <div>
-      <p id="sample">Sample text</p>
-      <button type="button" class="btn" id="clicker">Click Me!</button>
-      <p id="name">this is the Name</p>
+      <p class="link">this is the Name</p>
+      <p class="desc">Sample text</p>
+    </div>
+    <div>
+      <p class="link">this is the Name</p>
+      <p class="desc">Sample text</p>
+    </div>
+    <div>
+      <p class="link">this is the Name</p>
+      <p class="desc">Sample text</p>
     </div>
   </div>
     <script>
       $(document).ready(function(){
-        $("#name").click(function(){
-        $("#sample").toggle(300);
+        $(".link").click(function(){
+        $(".desc").toggle(300);
           });
       });
     </script>
