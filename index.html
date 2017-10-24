@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JQuery Address Book</title>
 
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   </head>
   <body>
     <div class="container">
         <div class="jumbotron">
             <h1 class="heading-text">JQuery Address Book</h1>
         </div>
-    </div>
-    <div>
 
+    <div>
+      <p id="sample">Sample text</p>
+      <button type="button" class="btn" id="clicker">Click Me!</button>
+      <p id="name">this is the Name</p>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </div>
+    <script>
+      $(document).ready(function(){
+        $("#name").click(function(){
+        $("#sample").toggle(300);
+          });
+      });
+    </script>
   </body>
 </html>

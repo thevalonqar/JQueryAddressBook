@@ -1,3 +1,7 @@
 .heading-text {
   text-align: center;
 }
+
+#name:hover {
+  text-decoration: line-through;
+}
